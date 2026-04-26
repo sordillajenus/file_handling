@@ -6,7 +6,7 @@ class StatisticsTracker:
     def statistics(self):
             even_numbers = []
             odd_numbers = []
-            
+
             with open(self.even_file, "r") as file_1:
                 for line in file_1:
                     line = line.strip()
@@ -28,7 +28,7 @@ class StatisticsTracker:
             highest_even = max(even_numbers)
             highest_odd = max(even_numbers)
 
-            with open(self.summary_file, "w") as file_3:
+            with open(self.summary_report_file, "w") as file_3:
                 file_3.write("STATISTICAL SUMMARY:" + "\n")
                 file_3.write("\n")
                 file_3.write("EVEN SECTION:" "\n")
