@@ -1,5 +1,5 @@
-# file = open("integers_1.txt", "w")
-# file.close()
+file = open("integers_1.txt", "w")
+file.close()
 
 with open("integers_1.txt", "r") as file_1, \
      open("double.txt", "w") as file_2, \
