@@ -3,4 +3,9 @@
 
 with open("students_with_their_gwa.txt", "r") as file:
     for line in file:
-        print(line)
+       if "-" in line:
+        line.split("-")
+        
+
+
+
