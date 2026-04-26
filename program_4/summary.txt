@@ -6,4 +6,6 @@ The sum of even numbers are: 32540
 The highest even number is: 8836
 
 ODD SECTION:
-The number of odd numbers are: 11The sum of odd numbers are: 2436117The highest odd number is: 8836
+The number of odd numbers are: 11
+The sum of odd numbers are: 2436117
+The highest odd number is: 8836

@@ -26,7 +26,7 @@ class StatisticsTracker:
             odd_sum = sum(odd_numbers)
 
             highest_even = max(even_numbers)
-            highest_odd = max(even_numbers)
+            highest_odd = max(odd_numbers)
 
             with open(self.summary_report_file, "w") as file_3:
                 file_3.write("STATISTICAL SUMMARY:" + "\n")
@@ -37,9 +37,9 @@ class StatisticsTracker:
                 file_3.write(f"The highest even number is: {highest_even}" + "\n")      
                 file_3.write("\n")  
                 file_3.write("ODD SECTION:" + "\n") 
-                file_3.write(f"The number of odd numbers are: {odd_counter}")  
-                file_3.write(f"The sum of odd numbers are: {odd_sum}") 
-                file_3.write(f"The highest odd number is: {highest_odd}")    
+                file_3.write(f"The number of odd numbers are: {odd_counter}" + "\n")  
+                file_3.write(f"The sum of odd numbers are: {odd_sum}" + "\n") 
+                file_3.write(f"The highest odd number is: {highest_odd}" + "\n")    
 
 
             
