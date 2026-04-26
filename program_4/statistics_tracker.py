@@ -3,12 +3,10 @@ class StatisticsTracker:
         self.even_file = even_file
         self.odd_file = odd_file
         self.summary_report_file = summary_report_file
-
-        def statistics(self):
+    def statistics(self):
             even_numbers = []
             odd_numbers = []
-
-        
+            
             with open(self.even_file, "r") as file_1:
                 for line in file_1:
                     line = line.strip()
