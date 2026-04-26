@@ -1,2 +1,5 @@
-file = open("students_with_their_gwa.txt", "w")
-file.close()
+# file = open("students_with_their_gwa.txt", "w")
+# file.close()
+
+with open("students_with_their_gwa.txt", "r"):
+    
