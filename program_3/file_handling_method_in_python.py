@@ -3,16 +3,14 @@
 
 with open("mylife.txt", "a") as file:
     while True:
-        try:
-            content = input("Write something about your day: ")
-            file.write(content + "\n")
+        content = input("Write something about your day: ")
+        file.write(content + "\n")
         
-            question = input("Are there more lines? yes/no: ")
-            if question not in ["yes", "no"]:
-                print("Invalid input")
+        question = input("Are there more lines? yes/no: ")
+        if question not in ["yes", "no"]:
+            print("Invalid input")
 
-            if question == "no":
-                break
-        except:
-            print("yes or no answer only")   
+        if question == "no":
+            break
+        
 
