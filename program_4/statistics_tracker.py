@@ -21,6 +21,24 @@ class StatisticsTracker:
                     if line:
                         odd_numbers.append(int(line))
 
+            even_counter = len(even_numbers)
+            odd_counter = len(odd_numbers)
+
+            even_sum = sum(even_numbers)
+            odd_sum = sum(odd_numbers)
+
+            highest_even = max(even_numbers)
+            highest_odd = max(even_numbers)
+
+            with open(self.summary_file, "w") as file_3:
+                file_3.write(f"The number of even numbers are {even_counter}")
+                file_3.write(f"The number of odd numbers are {}")
+
+            
+
+        
+
+
                     
 
 
