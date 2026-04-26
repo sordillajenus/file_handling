@@ -1,4 +1,4 @@
-from statistics_tracker import StatisticsTracker as stats
+from statistics_tracker import StatisticsTracker
 
 class IntegersEvenOdd:
     def __init__ (self, integer_file, even_file, odd_file):
@@ -31,12 +31,11 @@ method = IntegersEvenOdd(
 
 method.process()
 
-statistics = StatisticsTracker(
+analysis = StatisticsTracker(
     "double.txt",
     "triple.txt",
     "summary.txt"
 )
 
-statistics.generate_summary()
-
+analysis.statistics()
         

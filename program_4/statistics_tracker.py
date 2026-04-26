@@ -4,7 +4,7 @@ class StatisticsTracker:
         self.odd_file = odd_file
         self.summary_report_file = summary_report_file
 
-        def generate_summary(self):
+        def statistics(self):
             even_numbers = []
             odd_numbers = []
 
