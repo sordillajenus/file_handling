@@ -1,5 +1,5 @@
-# file = open("numbers.txt", "w")
-# file.close()
+file = open("numbers.txt", "w")
+file.close()
 
 with open("numbers.txt", "r") as file_1, \
      open("even.txt", "w") as file_2, \
