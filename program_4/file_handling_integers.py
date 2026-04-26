@@ -27,4 +27,6 @@ method = IntegersEvenOdd(
     "triple.txt"
 )
 
+method.process()
+
         
