@@ -5,19 +5,26 @@ class IntegersEvenOdd:
         self.odd_file = odd_file
 
     def process(self):
-        with open("integers_1.txt", "r") as file_1, \
-            open("double.txt", "w") as file_2, \
-            open("triple.txt", "w") as file_3:
+        with open(self.integer_file, "r") as file_1, \
+            open(self.even_file, "w") as file_2, \
+            open(self.odd_file, "w") as file_3:
     
             for line in file_1:
                 line = line.strip()
-                if line == " ":
+                if not line:
                     continue
 
-        num = int(line)
+                num = int(line)
 
-        squared = num ** 2
-        file_2.write(str(squared) + "\n")
-        cubed = num ** 3
-        file_3.write(str(cubed) + "\n")
+                if num % 2 == 0:
+                    file_2.write(str(num ** 2) + "\n")
+                else:
+                    file_3.write(str(num ** 3) + "\n")
+
+method = IntegersEvenOdd(
+    "integers_1.txt",
+    "double.txt",
+    "triple.txt"
+)
+
         
