@@ -5,6 +5,10 @@ with open("mylife.txt", "a") as file:
     while True:
         content = input("write something about your day: ")
         file.write(content + "\n")
-        break
+        
+        question = input("Are there more lines? yes/no: ")
+
+        if question == "no":
+            break
             
 
