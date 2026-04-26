@@ -15,7 +15,7 @@ with open("students_with_their_gwa.txt", "r") as file:
            top_student = name
            top_gwa = gwa
 
-print(f"The student with the highest gwa is {top_student} with the general weighted average of {top_gwa}")
+print(f"The student with the highest GWA is {top_student} with the general weighted average of {top_gwa}")
 
         
            
