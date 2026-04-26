@@ -12,6 +12,8 @@ with open("integers_1.txt", "r") as file_1, \
 
         num = int(line)
 
-        if num >= 0:
-            num ** 2
-            file
+        squared = num ** 2
+        file_2.write(str(squared) + "\n")
+        cubed = num ** 3
+        file_3.write(str(cubed) + "\n")
+        
