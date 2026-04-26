@@ -10,4 +10,9 @@ with open("numbers.txt", "r") as file_1, \
         if line == " ":
             continue
 
-    
+        num = int(line)
+
+        if num % 2 == 0:
+            file_2.write(str(num) + "\n")
+        else:
+            file_3.write(str(num) + "\n")
