@@ -33,8 +33,18 @@ class BehavioralAnalyzer:
                 num_3 = len(line_3)
                 odd_counter += num_3
 
+                file_4.write("BEHAVIORAL ANALYSIS" + "\n")
+                file_4.write("\n")
+                file_4.write("Dataset Summary" + "\n")
+                file_4.write("\n")
+                file_4.write("The dataset below contains the collection of numerical values extracted from the input file. After cleaning and validation, all valid integers were analyzed to determine patterns, distribution, and behavioral characteristics. " + "\n")
+                file_4.write("\n")
+                file_4.write("General Statistics" + "\n")
+                file_4.write(f"Total Numbers: {total_counter}" + "\n")
+                file_4.write(f"Valid Entries: {total_counter}" + "\n")
+                
                 if even_counter > odd_counter:
-                    file_4.write()
+                    file_4.write("The text file shows that the content is even-dominated. This means that ")
 
                 
 
