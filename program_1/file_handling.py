@@ -1,3 +1,5 @@
+from behavioral_analyzer import BehavioralAnalyzer
+
 class IntegerManipulation:
     def __init__(self, number_file, even_file, odd_file):
         self.number_file = number_file
@@ -30,3 +32,12 @@ integer = IntegerManipulation(
 )
 
 integer.process()
+
+integers = BehavioralAnalyzer(
+    "numbers.txt",
+    "even.txt",
+    "odd.txt",
+    "behavioral_analysis.txt"
+)
+
+integers.behavior()
