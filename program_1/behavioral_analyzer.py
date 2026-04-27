@@ -42,10 +42,27 @@ class BehavioralAnalyzer:
                 file_4.write("General Statistics" + "\n")
                 file_4.write(f"Total Numbers: {total_counter}" + "\n")
                 file_4.write(f"Valid Entries: {total_counter}" + "\n")
-                
-                if even_counter > odd_counter:
-                    file_4.write("The text file shows that the content is even-dominated. This means that ")
+                file_4.write("\n")
+                file_4.write("\n")
 
+                even_percentage = (even_counter / total_counter) * 100
+                odd_percentage = (odd_counter / total_counter) * 100
+                file_4.write("Parity Distribution (Even vs Odd)" + "\n")
+                file_4.write("\n")
+                file_4.write(f"Even Numbers: {even_counter} ({even_percentage}%)" + "\n")
+                file_4.write(f"Odd Numbers: {odd_counter} ({odd_percentage}%)" + "\n")
+                file_4.write("\n")
+                file_4.write("INTERPRETATION:" + "\n")
+                file_4.write("\n")
+
+                if even_counter > odd_counter:
+                    file_4.write("The dataset is dominated by even numbers, indicating a strong bias toward values divisible by 2. This suggests a structured or patterned input rather than random distribution. " + "\n")
+                elif odd_counter > even_counter:
+                    file_4.write("The dataset is dominated by **odd numbers**, indicating a strong bias toward values not divisible by 2. This suggests a distinct numerical pattern, potentially reflecting intentional selection or a non-random distribution of values." + "\n")
+                else:
+                    file_4.write("The dataset shows a **balanced distribution of even and odd numbers**, indicating no dominance of either group. This suggests a more uniform and potentially random distribution, with no clear bias toward values divisible or not divisible by 2." + '\n')
+
+                file_4.write("")
                 
 
                 
