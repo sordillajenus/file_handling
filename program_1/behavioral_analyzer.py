@@ -68,8 +68,32 @@ class BehavioralAnalyzer:
             else:
                 file_4.write("The dataset shows a **balanced distribution of even and odd numbers**, indicating no dominance of either group. This suggests a more uniform and potentially random distribution, with no clear bias toward values divisible or not divisible by 2." + '\n')
 
-            file_4.write("")
-                
+            if total_counter > 0:
+                minimum = min(numbers)
+                maximum = max(numbers)
+                average = sum(numbers) / total_counter  
+            file_4.write("\n")
+            file_4.write("Value Characteristics" + "\n")
+            file_4.write("\n")
+            file_4.write(f"The minimum value is: {minimum}\n")
+            file_4.write(f"The maximum value is: {maximum}\n")
+            file_4.write(f"The average is: {average}\n")
+
+            if average < 30:
+                file_4.write("The dataset is composed primarily of small values, indicating concentration in the lower range.\n")
+            elif average <= 70:
+                file_4.write("The dataset shows a moderate distribution of values, suggesting a balanced spread.\n")
+            else:
+                file_4.write("The dataset is dominated by large values, indicating a shift toward higher magnitudes.\n")
+
+            file_4.write("\nFinal Conclusion\n\n")
+
+            if average < 30:
+                file_4.write("Overall, the dataset is concentrated on smaller values with limited magnitude, suggesting controlled or constrained inputs.\n")
+            elif average <= 70:
+                file_4.write("Overall, the dataset demonstrates a balanced and stable distribution of values, indicating consistency and moderate variability.\n")
+            else:
+                file_4.write("Overall, the dataset exhibits a tendency toward larger values, suggesting emphasis on higher numerical ranges.\n")               
 
                 
 
