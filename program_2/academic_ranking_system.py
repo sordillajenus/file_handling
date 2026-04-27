@@ -25,7 +25,7 @@ class AcademicInsightAnalysis:
 
     def performance_category(self):
         with open(self.file_name, "r") as file_1, \
-            open(self.academic_report, "w") as file_2:
+            open(self.academic_report, "a") as file_2:
 
             execellent = []
             good = []
@@ -63,7 +63,37 @@ class AcademicInsightAnalysis:
                 file_2.write(f"{student} - {grade}\n")
     
     def academic_insight_report(self):
-        
+        with open(self.file_name, "r") as file_1, \
+            open(self.academic_report, "a") as file_2:
+
+            execellent = []
+            good = []
+            passed = []
+            failed = []
+
+            for line in file_1:
+                lines = line.split("-")
+                names = lines[0].strip()
+                avg = float(lines[1].strip())
+
+                if avg <= 1.50:
+                    execellent.append(names, avg)
+                elif 1.51 >= avg <= 2.50:
+                    good.append(names, avg)
+                elif 2.51 >= avg <= 3.00:
+                    passed.append(names, avg)
+                else:
+                    failed.append(names, avg)
+        file_2.write("\nACADEMIC INSIGHT\n")
+        number_excellent = len(execellent)
+        number_good = len(good)
+        number_passed = len(passed)
+        number_failed = len(failed)
+
+        if number_excellent > number_good and number_passed and number_failed:
+            file_2.write("")
+
+
 
 
                     
