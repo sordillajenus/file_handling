@@ -6,18 +6,19 @@ class BehavioralAnalyzer:
         self.analysis_file = analysis_file
 
     def behavior(self):
-        with open(self.number_file, "r") as file_1, \
-             open(self.even_file, "r") as file_2, \
-             open(self.odd_file, "r") as file_3, \
-             open(self.analysis_file, "w") as file_4:
-            
-            total_counter = 0
-            for line in file_1:
+        numbers = []
+
+        with open(self.number_file, "r") as file:
+            for line in file:
                 line = line.strip()
                 if line == "":
                     continue
-                num = len((line))
-                total_counter += num
+                try:
+                    num = int(line)
+                    numbers.append(num)
+                except ValueError:
+                    continue
+
             even_counter = 0
             for line_2 in file_2:
                 line_2 = line_2.strip()
