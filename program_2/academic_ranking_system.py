@@ -108,6 +108,22 @@ class AcademicInsightAnalysis:
                 """\nThe students are widely distributed across all performance categories (Excellent, Good, Passed, and Failed) with no clear majority or dominant range. 
                 This indicates a highly heterogeneous class performance, where students vary significantly in academic achievement\n""")
 
+    def gwa_statistics_engine(self):
+        with open(self.file_name, "r") as file_1, \
+            open(self.academic_report, "a") as file_2:
+
+            average = []
+            for line in file_1:
+                lines = line.split("-")
+                avg = float(lines[1].strip())
+                average.append(avg)
+            
+            file_2.write("\n📊 GWA Statistics\n")
+            
+
+            
+
+
 
 
                     
