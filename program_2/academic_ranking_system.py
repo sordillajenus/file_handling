@@ -118,8 +118,22 @@ class AcademicInsightAnalysis:
                 avg = float(lines[1].strip())
                 average.append(avg)
             
-            file_2.write("\n📊 GWA Statistics\n")
-            
+            mean = sum(average)/len(average)
+            def median(average):
+                average = sorted(average)
+                n = len(average)
+
+                if n % 2 == 1:
+                    return average[n // 2]
+                else:
+                    mid1 = average[n // 2 - 1]
+                    mid2 = average[n // 2]
+                    return (mid1 + mid2) / 2
+            file_2.write("\n📊 GWA Statistics\n\n")
+            file_2.write(f"(Mean) Average GWA of the Class: {mean}\n")
+            file_2.write
+
+
 
             
 
