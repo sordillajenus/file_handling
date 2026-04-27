@@ -1,3 +1,5 @@
+import numpy as np
+
 class AcademicInsightAnalysis:
     def __init__ (self, file_name, academic_report):
         self.file_name = file_name
@@ -119,16 +121,7 @@ class AcademicInsightAnalysis:
                 average.append(avg)
             
             mean = sum(average)/len(average)
-            def median(average):
-                average = sorted(average)
-                n = len(average)
-
-                if n % 2 == 1:
-                    return average[n // 2]
-                else:
-                    mid1 = average[n // 2 - 1]
-                    mid2 = average[n // 2]
-                    return (mid1 + mid2) / 2
+            median = np.median(average)
             file_2.write("\n📊 GWA Statistics\n\n")
             file_2.write(f"(Mean) Average GWA of the Class: {mean}\n")
             file_2.write
