@@ -66,7 +66,7 @@ class AcademicInsightAnalysis:
         with open(self.file_name, "r") as file_1, \
             open(self.academic_report, "a") as file_2:
 
-            execellent = []
+            excellent = []
             good = []
             passed = []
             failed = []
@@ -77,15 +77,15 @@ class AcademicInsightAnalysis:
                 avg = float(lines[1].strip())
 
                 if avg <= 1.50:
-                    execellent.append(names, avg)
-                elif 1.51 >= avg <= 2.50:
-                    good.append(names, avg)
-                elif 2.51 >= avg <= 3.00:
-                    passed.append(names, avg)
+                    excellent.append((names, avg))
+                elif 1.51 <=  avg <= 2.50:
+                    good.append((names, avg))
+                elif 2.51 <= avg <= 3.00:
+                    passed.append((names, avg))
                 else:
-                    failed.append(names, avg)
+                    failed.append((names, avg))
         file_2.write("\nACADEMIC INSIGHT\n")
-        number_excellent = len(execellent)
+        number_excellent = len(excellent)
         number_good = len(good)
         number_passed = len(passed)
         number_failed = len(failed)
