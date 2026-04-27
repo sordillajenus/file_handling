@@ -61,7 +61,10 @@ class AcademicInsightAnalysis:
             file_2.write("🔴 Failed (> 3.00)\n")
             for student, grade in failed:
                 file_2.write(f"{student} - {grade}\n")
-                
+    
+    def academic_insight_report(self):
+        
+
 
                     
 
