@@ -24,3 +24,8 @@ class StudentGWAAnalyzer:
         print(f"The student with the highest GWA is {self.top_student} with the general weighted average of {self.top_gwa}")
 
 
+analyzer = StudentGWAAnalyzer("students_with_their_gwa.txt")
+
+analyzer.create_file()
+analyzer.find_top_student()
+analyzer.display_result()
