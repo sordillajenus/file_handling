@@ -91,8 +91,25 @@ class AcademicInsightAnalysis:
         number_failed = len(failed)
 
         if number_excellent > number_good and number_passed and number_failed:
-            file_2.write("")
-
+            file_2.write(
+            """\nThe majority of students are classified under the Excellent range, indicating a very strong overall academic performance. 
+            This suggests high mastery of the subject matter and consistent study habits across most of the class.\n""")
+        elif number_good > number_excellent and number_passed and number_failed:
+            file_2.write(
+                """\nThe majority of students fall within the Good range, indicating a generally strong but not exceptional performance level.
+                  This suggests that most students are performing well, with room for improvement toward excellence\n""")
+        elif number_passed > number_excellent and number_good and number_failed:
+            file_2.write(
+                """\nThe majority of students are in the Passed range, indicating an average overall performance. 
+                While most students meet the minimum requirements, there is limited academic excellence observed.\n""")
+        elif number_failed > number_excellent and number_good and number_passed:
+            file_2.write(
+                """\nThe majority of students fall under the Failed category, indicating serious academic difficulties within the class. 
+                This suggests a need for intervention, remediation, and stronger academic support\n""")
+        else:
+            file_2.write(
+                """\nThe students are widely distributed across all performance categories (Excellent, Good, Passed, and Failed) with no clear majority or dominant range. 
+                This indicates a highly heterogeneous class performance, where students vary significantly in academic achievement\n""")
 
 
 
