@@ -1,4 +1,5 @@
 import numpy as np
+import statistics
 
 class AcademicInsightAnalysis:
     def __init__ (self, file_name, academic_report):
@@ -122,9 +123,17 @@ class AcademicInsightAnalysis:
             
             mean = sum(average)/len(average)
             median = np.median(average)
+            gwa_gap = max(average) - min(average)
+            standard_deviation = statistics.stdev(average)
+
             file_2.write("\n📊 GWA Statistics\n\n")
             file_2.write(f"(Mean) Average GWA of the Class: {mean}\n")
-            file_2.write
+            file_2.write(
+                """\nThe average GWA represents the overall academic performance of the class. It shows the general standing of students when all grades are combined. 
+                A lower average indicates stronger performance across the group, while a higher average suggests that most students are performing at a moderate or lower level. 
+                This value gives a quick overview of how the class is performing as a whole.\n\n""")
+            file_2.write(f"Median GWA: {median}\n")
+            
 
 
 
