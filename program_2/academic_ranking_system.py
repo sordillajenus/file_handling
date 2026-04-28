@@ -130,12 +130,27 @@ class AcademicInsightAnalysis:
             file_2.write(f"(Mean) Average GWA of the Class: {mean}\n")
             file_2.write(
                 """\nThe average GWA represents the overall academic performance of the class. It shows the general standing of students when all grades are combined. 
-                A lower average indicates stronger performance across the group, while a higher average suggests that most students are performing at a moderate or lower level. 
-                This value gives a quick overview of how the class is performing as a whole.\n\n""")
+                A lower average indicates stronger performance across the group, while a higher average suggests that most students are performing at a moderate or lower level.\n\n""")
             file_2.write(f"Median GWA: {median}\n")
+            file_2.write(
+                """\nThe median GWA reflects the middle point of all student grades when arranged from lowest to highest. 
+                It shows the typical performance level of the class without being affected by extremely high or low values. If the median is close to the average, it suggests a balanced distribution of grades. 
+                If there is a large difference between them, it may indicate uneven performance among students.\n\n""")
+            file_2.write(f"Highest vs Lowest GWA gap: {gwa_gap}\n")
+            file_2.write(
+                """\nThis measures the difference between the highest-performing student and the lowest-performing student. A small gap suggests that the class performance is relatively consistent. 
+                A large gap, on the other hand, indicates a wide difference in academic achievement, showing that some students are significantly ahead while others are struggling.\n\n""")
+            file_2.write(f"Standard Deviation:{standard_deviation}")
+            file_2.write(
+                """\nStandard deviation shows how spread out the grades are from the average. A low value means that most students have similar GWA scores, indicating consistency in performance. 
+                A high value means that grades vary widely, showing inconsistency in understanding and academic performance across the class.\n\n""")
+            file_2.write("CONCLUSION\n\n")
+            file_2.write(
+                """\nThe difference between the upper and lower GWA for each group indicates how far apart from one another stand the best students versus those who performed weakest, while latter will tell you how sharply centralized or dispersed were grades overall. 
+                If both are low then the class is very homogeneous and we have students performing at similar levels. Then both are high: this indicates a clear separation between strong and weak performers. A wide delta with a low standard deviation usually means that most students are very close performance-wise but some outliers make the difference, 
+                while a narrow delta with high (or higher) standard deviation suggests there is still variation across students though the overall gap might be narrower. In a nutshell, these are steps to give us an understanding of the overall performance and whether we have even class or not; 
+                that is also helpful in identifying which group need attention.\n""")
             
-
-
 
             
 
