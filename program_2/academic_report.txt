@@ -1,0 +1,22 @@
+Below is the ranking of students who have demonstrated exemplary academic performance. Their dedication, effort, and commitment have led them to achieve outstanding grades.
+
+Rank 1: Peter Parker - 1.2
+Rank 2: Bruce Wayne - 1.21
+Rank 3: Miles Morales - 1.45
+Rank 4: Jun Santos - 1.5
+Rank 5: Alex Mason - 1.55
+Rank 6: Matthew Murdock - 1.6
+Rank 7: Daniil Dubov - 1.7
+Rank 8: Prince Janbell - 1.75
+Rank 9: Viktor Reznov - 1.85
+Rank 10: Soap Mactavish - 1.9
+Rank 11: Marshall Teach - 1.95
+Rank 12: Foggy Nelson - 2.0
+Rank 13: Boyet Reyes - 2.1
+Rank 14: Frank Woods - 2.15
+Rank 15: Karen Page - 2.2
+Rank 16: James Ramirez - 2.25
+Rank 17: Wilson Fisk - 2.3
+Rank 18: Ace Portgas - 2.4
+Rank 19: Vladimir Makarov - 2.5
+Rank 20: Christian Hikaru - 2.6

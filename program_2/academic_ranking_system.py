@@ -41,13 +41,13 @@ class AcademicInsightAnalysis:
                 avg = float(lines[1].strip())
 
                 if avg <= 1.50:
-                    execellent.append(names, avg)
+                    execellent.append((names, avg))
                 elif 1.51 >= avg <= 2.50:
-                    good.append(names, avg)
+                    good.append((names, avg))
                 elif 2.51 >= avg <= 3.00:
-                    passed.append(names, avg)
+                    passed.append((names, avg))
                 else:
-                    failed.append(names, avg)
+                    failed.append((names, avg))
 
             file_2.write("\n")
             file_2.write("PERFORMANCE CATEGORY\n\n")
