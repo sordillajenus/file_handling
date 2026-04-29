@@ -6,7 +6,7 @@ class LifeAnalytics:
         self.filename = filename
 
     def write_entry(self):
-        with open (self.filename, "a") as file:
+        with open (self.filename, "a", encoding="utf-8") as file:
 
             while True:
                 mood = input("What's your mood today?: ")
@@ -20,7 +20,7 @@ class LifeAnalytics:
                 file.write(f"Words: {word_count}\n")
                 file.write(f"Entry: {entry}\n\n")
 
-                repeat = input("Add another line? yes/no: ").lower
+                repeat = input("Add another line? yes/no: ").lower()
                 if repeat == "no":
                     break
 
@@ -44,7 +44,7 @@ class LifeAnalytics:
             print("No data to analyze.")
             return
         
-        most_common_words =  most_common_mood = Counter(moods).most_common(1)[0][0]
+        most_common_words =  most_common_words = Counter(moods).most_common(1)[0][0]
         average_words = sum(word_counts) / len(word_counts)
         minimum_word_counts = min(word_counts)
         maximum_word_counts = max(word_counts)
@@ -56,15 +56,14 @@ class LifeAnalytics:
         print(f"Longest Entry: {maximum_word_counts} words")
         print(f"Shortest Entry: {minimum_word_counts} words")
 
-        print("\INSIGHT:")
+        print("\nINSIGHT:")
         if average_words > 20:
             print("You tend to write detailed reflections.")
         else:
             print("Your entries are short and concise.")
 
         if most_common_words in ["sad", "stressed"]:
-            print("It appears that your day is flooded with negative experiences. I hope you get better. You're not alone and you're highly appreciated!")
-        else:
+            print("It appears that your day is flooded with negative experiences. I hope you get better.")
             print("It appears that your emotion is generally positive and consistenly average as what everyday humans experience.")
 
     def run(self):
