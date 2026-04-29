@@ -57,7 +57,7 @@ class AcademicInsightAnalysis:
                 file_2.write(f"{student} - {grade}\n")
             file_2.write("\nGood (1.51 - 2.50)\n")
             for student, grade in good:
-                file_2.write(f"{student} - {grade}\n")
+                file_2.write(f"{student} - {grade}\n\n")
             file_2.write("Passed (2.51 - 3.00)\n")
             for student, grade in passed:
                 file_2.write(f"{student} - {grade}\n\n")
