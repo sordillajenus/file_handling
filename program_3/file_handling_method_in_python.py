@@ -33,8 +33,8 @@ class MyLifeWriter:
 writer = MyLifeWriter("mylife.txt")
 writer.run()
 
-app = LifeAnalytics("mylife.txt")
-app.run()
+analyzer = LifeAnalytics("mylife.txt")
+analyzer.run()
 
 
         

@@ -44,8 +44,7 @@ class LifeAnalytics:
             print("No data to analyze.")
             return
         
-        most_common_words =  most_common_words = Counter(moods).most_common(1)[0][0]
-        average_words = sum(word_counts) / len(word_counts)
+        most_common_words = Counter(moods).most_common(1)[0][0]        average_words = sum(word_counts) / len(word_counts)
         minimum_word_counts = min(word_counts)
         maximum_word_counts = max(word_counts)
 
