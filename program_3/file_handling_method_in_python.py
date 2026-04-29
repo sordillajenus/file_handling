@@ -4,12 +4,8 @@ class MyLifeWriter:
     def __init__ (self, filename):
         self.file_name = filename
 
-    def initialize_file(self):
-        with open(self.file_name, "w", encoding="utf-8"):
-            pass
-
     def write_entries(self):
-        with open(self.file_name, "w", encoding="utf-8") as file:
+        with open(self.file_name, "a", encoding="utf-8") as file:
          
          while True:
             content = input("Write something about your day: ")
@@ -27,7 +23,6 @@ class MyLifeWriter:
                 break
 
     def run(self):
-        self.initialize_file()
         self.write_entries()
 
 writer = MyLifeWriter("mylife.txt")
