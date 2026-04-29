@@ -64,9 +64,9 @@ class BehavioralAnalyzer:
             if even_counter > odd_counter:
                 file_4.write("The dataset is dominated by even numbers, indicating a strong bias toward values divisible by 2. This suggests a structured or patterned input rather than random distribution. " + "\n")
             elif odd_counter > even_counter:
-                file_4.write("The dataset is dominated by **odd numbers**, indicating a strong bias toward values not divisible by 2. This suggests a distinct numerical pattern, potentially reflecting intentional selection or a non-random distribution of values." + "\n")
+                file_4.write("The dataset is dominated by odd numbers, indicating a strong bias toward values not divisible by 2. This suggests a distinct numerical pattern, potentially reflecting intentional selection or a non-random distribution of values." + "\n")
             else:
-                file_4.write("The dataset shows a **balanced distribution of even and odd numbers**, indicating no dominance of either group. This suggests a more uniform and potentially random distribution, with no clear bias toward values divisible or not divisible by 2." + '\n')
+                file_4.write("The dataset shows a balanced distribution of even and odd numbers, indicating no dominance of either group. This suggests a more uniform and potentially random distribution, with no clear bias toward values divisible or not divisible by 2." + '\n')
 
             if total_counter > 0:
                 minimum = min(numbers)

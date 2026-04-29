@@ -30,14 +30,14 @@ class StudentGWAAnalyzer:
 
 
 
-# analyzer = StudentGWAAnalyzer(
-#     "students_with_their_gwa.txt",
-#     "gwa_analysis_report.txt"
-# )
+analyzer = StudentGWAAnalyzer(
+    "students_with_their_gwa.txt",
+    "gwa_analysis_report.txt"
+)
 
-# analyzer.analyze()
-# analyzer.save_result()
-# analyzer.display()
+analyzer.analyze()
+analyzer.save_result()
+analyzer.display()
 
 analyzers = AcademicInsightAnalysis(
     "students_with_their_gwa.txt",
