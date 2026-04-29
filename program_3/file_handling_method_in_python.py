@@ -14,12 +14,19 @@ class MyLifeWriter:
             file.write(content + "\n")
 
             while True:
-        
-        question = input("Are there more lines? yes/no: ")
-        if question not in ["yes", "no"]:
-            print("Invalid input")
+                    question = input("Are there more lines? yes/no: ").lower()
 
-        if question == "no":
-            break
+                    if question in ["yes", "no"]:
+                        break
+                    else:
+                        print("Invalid input. Please type 'yes' or 'no'.")
+
+            if question == "no":
+                break
+
+
+
+
+        
         
 
