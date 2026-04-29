@@ -1,3 +1,5 @@
+from academic_ranking_system import AcademicInsightAnalysis
+
 class StudentGWAAnalyzer:
     def __init__(self, filename, output_file):
         self.filename = filename
@@ -36,3 +38,13 @@ analyzer = StudentGWAAnalyzer(
 analyzer.analyze()
 analyzer.save_result()
 analyzer.display()
+
+analyzers = AcademicInsightAnalysis(
+    "students_with_their_gwa.txt",
+    "academic_report.txt"
+)
+
+analyzers.ranking()
+analyzers.performance_category()
+analyzers.academic_insight_report()
+analyzers.gwa_statistics_engine()
