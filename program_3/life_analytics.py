@@ -43,3 +43,19 @@ class LifeAnalytics:
         if not moods:
             print("No data to analyze.")
             return
+        
+        most_common_words =  most_common_mood = Counter(moods).most_common(1)[0][0]
+        average_words = sum(word_counts) / len(word_counts)
+        minimum_word_counts = min(word_counts)
+        maximum_word_counts = max(word_counts)
+
+        print("\nLIFE ANALYTICS REPORT\n")
+        print(f"Total Entries: {len(moods)}")
+        print(f"Most Common Mood: {most_common_words}")
+        print(f"Average Words per Entry: {average_words:.2f}")
+        print(f"Longest Entry: {maximum_word_counts} words")
+        print(f"Shortest Entry: {minimum_word_counts} words")
+
+
+
+
