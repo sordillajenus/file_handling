@@ -44,7 +44,8 @@ class LifeAnalytics:
             print("No data to analyze.")
             return
         
-        most_common_words = Counter(moods).most_common(1)[0][0]        average_words = sum(word_counts) / len(word_counts)
+        most_common_words = Counter(moods).most_common(1)[0][0]        
+        average_words = sum(word_counts) / len(word_counts)
         minimum_word_counts = min(word_counts)
         maximum_word_counts = max(word_counts)
 
@@ -63,7 +64,8 @@ class LifeAnalytics:
 
         if most_common_words in ["sad", "stressed"]:
             print("It appears that your day is flooded with negative experiences. I hope you get better.")
-            print("It appears that your emotion is generally positive and consistenly average as what everyday humans experience.")
+        else:
+            print("It appears that your emotion is generally positive and consistently average as what everyday humans experience.")
 
     def run(self):
         while True:
