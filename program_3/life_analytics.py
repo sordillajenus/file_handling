@@ -73,5 +73,16 @@ class LifeAnalytics:
             print("2. Analyze Entries")
             print("3. Exit")
 
+            choice = input("Choose: ")
+
+            if choice == "1":
+                self.write_entry()
+            elif choice == "2":
+                self.analyze_entries()
+            elif choice == "3":
+                break
+            else:
+                print("Invalid choice")
+
 
 
