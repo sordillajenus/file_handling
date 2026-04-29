@@ -20,10 +20,26 @@ class LifeAnalytics:
                 file.write(f"Words: {word_count}\n")
                 file.write(f"Entry: {entry}\n\n")
 
-                count = input("Add another line? yes/no: ").lower
-                if count == "no":
+                repeat = input("Add another line? yes/no: ").lower
+                if repeat == "no":
                     break
 
     def analyze_entries(self):
-        mood = []
-        word = []
+        moods = []
+        word_counts = []
+
+        with open(self.filename, "r", encoding="utf-8") as file:
+            lines = file.readlines()
+
+        for line in lines:
+            if line.startswith("Mood:"):
+                mood = line.split(":")[1].strip()
+                moods.append(mood)
+
+            elif line.startswith("Words:"):
+                count = int(line.split(":")[1].strip())
+                word_counts.append(count)
+
+        if not moods:
+            print("No data to analyze.")
+            return
