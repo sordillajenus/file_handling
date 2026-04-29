@@ -67,6 +67,11 @@ class LifeAnalytics:
         else:
             print("It appears that your emotion is generally positive and consistenly average as what everyday humans experience.")
 
+    def run(self):
+        while True:
+            print("\n1. Write Entry")
+            print("2. Analyze Entries")
+            print("3. Exit")
 
 
 
