@@ -52,16 +52,16 @@ class AcademicInsightAnalysis:
             file_2.write("\n")
             file_2.write("PERFORMANCE CATEGORY\n\n")
             file_2.write("\n")
-            file_2.write("🟢 Excellent (≤ 1.50)\n")
+            file_2.write("Excellent (≤ 1.50)\n")
             for student, grade in execellent:
                 file_2.write(f"{student} - {grade}\n")
-            file_2.write("\n🟡 Good (1.51 - 2.50)\n")
+            file_2.write("\nGood (1.51 - 2.50)\n")
             for student, grade in good:
                 file_2.write(f"{student} - {grade}\n")
-            file_2.write("🟠 Passed (2.51 - 3.00)\n")
+            file_2.write("Passed (2.51 - 3.00)\n")
             for student, grade in passed:
                 file_2.write(f"{student} - {grade}\n")
-            file_2.write("🔴 Failed (> 3.00)\n")
+            file_2.write("Failed (> 3.00)\n")
             for student, grade in failed:
                 file_2.write(f"{student} - {grade}\n")
     
@@ -129,7 +129,7 @@ class AcademicInsightAnalysis:
             else:
                 standard_deviation = 0
 
-            file_2.write("\n📊 GWA Statistics\n\n")
+            file_2.write("\nGWA Statistics\n\n")
             file_2.write(f"(Mean) Average GWA of the Class: {mean}\n")
             file_2.write(
                 """\nThe average GWA represents the overall academic performance of the class. It shows the general standing of students when all grades are combined. 
