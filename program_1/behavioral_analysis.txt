@@ -1,0 +1,30 @@
+BEHAVIORAL ANALYSIS
+
+Dataset Summary
+
+The dataset below contains the collection of numerical values extracted from the input file. After cleaning and validation, all valid integers were analyzed to determine patterns, distribution, and behavioral characteristics. 
+
+General Statistics
+Total Numbers: 20
+Valid Entries: 20
+
+
+Parity Distribution (Even vs Odd)
+
+Even Numbers: 9 (45.0%)
+Odd Numbers: 11 (55.00000000000001%)
+
+INTERPRETATION:
+
+The dataset is dominated by odd numbers, indicating a strong bias toward values not divisible by 2. This suggests a distinct numerical pattern, potentially reflecting intentional selection or a non-random distribution of values.
+
+Value Characteristics
+
+The minimum value is: 2
+The maximum value is: 99
+The average is: 47.55
+The dataset shows a moderate distribution of values, suggesting a balanced spread.
+
+Final Conclusion
+
+Overall, the dataset demonstrates a balanced and stable distribution of values, indicating consistency and moderate variability.
