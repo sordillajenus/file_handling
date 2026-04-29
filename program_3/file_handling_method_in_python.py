@@ -1,3 +1,5 @@
+from life_analytics import LifeAnalytics
+
 class MyLifeWriter:
     def __init__ (self, filename):
         self.file_name = filename
@@ -30,6 +32,9 @@ class MyLifeWriter:
 
 writer = MyLifeWriter("mylife.txt")
 writer.run()
+
+app = LifeAnalytics("mylife.txt")
+app.run()
 
 
         
