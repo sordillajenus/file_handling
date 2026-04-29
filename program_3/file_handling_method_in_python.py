@@ -28,6 +28,9 @@ class MyLifeWriter:
         self.initialize_file()
         self.write_entries()
 
+writer = MyLifeWriter("mylife.txt")
+writer.run()
+
 
         
         
