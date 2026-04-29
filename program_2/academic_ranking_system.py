@@ -42,9 +42,9 @@ class AcademicInsightAnalysis:
 
                 if avg <= 1.50:
                     execellent.append((names, avg))
-                elif 1.51 >= avg <= 2.50:
+                elif 1.51 <= avg <= 2.50:
                     good.append((names, avg))
-                elif 2.51 >= avg <= 3.00:
+                elif 2.51 <= avg <= 3.00:
                     passed.append((names, avg))
                 else:
                     failed.append((names, avg))
@@ -87,29 +87,29 @@ class AcademicInsightAnalysis:
                     passed.append((names, avg))
                 else:
                     failed.append((names, avg))
-        file_2.write("\nACADEMIC INSIGHT\n")
-        number_excellent = len(excellent)
-        number_good = len(good)
-        number_passed = len(passed)
-        number_failed = len(failed)
+            file_2.write("\nACADEMIC INSIGHT\n")
+            number_excellent = len(excellent)
+            number_good = len(good)
+            number_passed = len(passed)
+            number_failed = len(failed)
 
-        if number_excellent > number_good and number_excellent > number_passed and number_excellent > number_failed:
-            file_2.write(
-            """\nThe majority of students are classified under the Excellent range, indicating a very strong overall academic performance. 
-            This suggests high mastery of the subject matter and consistent study habits across most of the class.\n""")
-        elif number_good > number_excellent and number_good > number_passed and number_good > number_failed:            file_2.write(
-                """\nThe majority of students fall within the Good range, indicating a generally strong but not exceptional performance level.
-                  This suggests that most students are performing well, with room for improvement toward excellence\n""")
-        elif number_passed > number_excellent and number_passed > number_good and number_passed > number_failed:            file_2.write(
-                """\nThe majority of students are in the Passed range, indicating an average overall performance. 
-                While most students meet the minimum requirements, there is limited academic excellence observed.\n""")
-        elif number_failed > number_excellent and number_failed > number_good and number_failed > number_passed:            file_2.write(
-                """\nThe majority of students fall under the Failed category, indicating serious academic difficulties within the class. 
-                This suggests a need for intervention, remediation, and stronger academic support\n""")
-        else:
-            file_2.write(
-                """\nThe students are widely distributed across all performance categories (Excellent, Good, Passed, and Failed) with no clear majority or dominant range. 
-                This indicates a highly heterogeneous class performance, where students vary significantly in academic achievement\n""")
+            if number_excellent > number_good and number_excellent > number_passed and number_excellent > number_failed:
+                file_2.write(
+                """\nThe majority of students are classified under the Excellent range, indicating a very strong overall academic performance. 
+                This suggests high mastery of the subject matter and consistent study habits across most of the class.\n""")
+            elif number_good > number_excellent and number_good > number_passed and number_good > number_failed:            file_2.write(
+                    """\nThe majority of students fall within the Good range, indicating a generally strong but not exceptional performance level.
+                    This suggests that most students are performing well, with room for improvement toward excellence\n""")
+            elif number_passed > number_excellent and number_passed > number_good and number_passed > number_failed:            file_2.write(
+                    """\nThe majority of students are in the Passed range, indicating an average overall performance. 
+                    While most students meet the minimum requirements, there is limited academic excellence observed.\n""")
+            elif number_failed > number_excellent and number_failed > number_good and number_failed > number_passed:            file_2.write(
+                    """\nThe majority of students fall under the Failed category, indicating serious academic difficulties within the class. 
+                    This suggests a need for intervention, remediation, and stronger academic support\n""")
+            else:
+                file_2.write(
+                    """\nThe students are widely distributed across all performance categories (Excellent, Good, Passed, and Failed) with no clear majority or dominant range. 
+                    This indicates a highly heterogeneous class performance, where students vary significantly in academic achievement\n""")
 
     def gwa_statistics_engine(self):
         with open(self.file_name, "r") as file_1, \
@@ -124,7 +124,10 @@ class AcademicInsightAnalysis:
             mean = sum(average)/len(average)
             median = np.median(average)
             gwa_gap = max(average) - min(average)
-            standard_deviation = statistics.stdev(average)
+            if len(average) > 1:
+                standard_deviation = statistics.stdev(average)
+            else:
+                standard_deviation = 0
 
             file_2.write("\n📊 GWA Statistics\n\n")
             file_2.write(f"(Mean) Average GWA of the Class: {mean}\n")
