@@ -7,8 +7,8 @@ class AcademicInsightAnalysis:
         self.academic_report = academic_report
 
     def ranking(self):
-        with open(self.file_name, "r") as file_1, \
-            open(self.academic_report, "w") as file_2:
+        with open(self.file_name, "r", encoding="utf-8") as file_1, \
+     open(self.academic_report, "a", encoding="utf-8") as file_2:
 
             students_ranking = {
 
@@ -27,8 +27,8 @@ class AcademicInsightAnalysis:
                 rank_number += 1
 
     def performance_category(self):
-        with open(self.file_name, "r") as file_1, \
-            open(self.academic_report, "a") as file_2:
+        with open(self.file_name, "r", encoding="utf-8") as file_1, \
+     open(self.academic_report, "a", encoding="utf-8") as file_2:
 
             execellent = []
             good = []
@@ -66,8 +66,8 @@ class AcademicInsightAnalysis:
                 file_2.write(f"{student} - {grade}\n")
     
     def academic_insight_report(self):
-        with open(self.file_name, "r") as file_1, \
-            open(self.academic_report, "a") as file_2:
+        with open(self.file_name, "r", encoding="utf-8") as file_1, \
+     open(self.academic_report, "a", encoding="utf-8") as file_2:
 
             excellent = []
             good = []
@@ -112,9 +112,8 @@ class AcademicInsightAnalysis:
                     This indicates a highly heterogeneous class performance, where students vary significantly in academic achievement\n""")
 
     def gwa_statistics_engine(self):
-        with open(self.file_name, "r") as file_1, \
-            open(self.academic_report, "a") as file_2:
-
+        with open(self.file_name, "r", encoding="utf-8") as file_1, \
+     open(self.academic_report, "a", encoding="utf-8") as file_2:
             average = []
             for line in file_1:
                 lines = line.split("-")
