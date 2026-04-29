@@ -1,0 +1,87 @@
+Below is the ranking of students who have demonstrated exemplary academic performance. Their dedication, effort, and commitment have led them to achieve outstanding grades.
+
+Rank 1: Peter Parker - 1.2
+Rank 2: Bruce Wayne - 1.21
+Rank 3: Miles Morales - 1.45
+Rank 4: Jun Santos - 1.5
+Rank 5: Alex Mason - 1.55
+Rank 6: Matthew Murdock - 1.6
+Rank 7: Daniil Dubov - 1.7
+Rank 8: Prince Janbell - 1.75
+Rank 9: Viktor Reznov - 1.85
+Rank 10: Soap Mactavish - 1.9
+Rank 11: Marshall Teach - 1.95
+Rank 12: Foggy Nelson - 2.0
+Rank 13: Boyet Reyes - 2.1
+Rank 14: Frank Woods - 2.15
+Rank 15: Karen Page - 2.2
+Rank 16: James Ramirez - 2.25
+Rank 17: Wilson Fisk - 2.3
+Rank 18: Ace Portgas - 2.4
+Rank 19: Vladimir Makarov - 2.5
+Rank 20: Christian Hikaru - 2.6
+
+PERFORMANCE CATEGORY
+
+
+Excellent (≤ 1.50)
+Jun Santos - 1.5
+Peter Parker - 1.2
+Bruce Wayne - 1.21
+Miles Morales - 1.45
+
+Good (1.51 - 2.50)
+Prince Janbell - 1.75
+Boyet Reyes - 2.1
+James Ramirez - 2.25
+Soap Mactavish - 1.9
+Vladimir Makarov - 2.5
+Matthew Murdock - 1.6
+Foggy Nelson - 2.0
+Karen Page - 2.2
+Wilson Fisk - 2.3
+Marshall Teach - 1.95
+Daniil Dubov - 1.7
+Ace Portgas - 2.4
+Viktor Reznov - 1.85
+Frank Woods - 2.15
+Alex Mason - 1.55
+Passed (2.51 - 3.00)
+Christian Hikaru - 2.6
+
+Failed (> 3.00)
+
+ACADEMIC INSIGHT
+
+The majority of students fall within the Good range, indicating a generally strong but not exceptional performance level.
+                    This suggests that most students are performing well, with room for improvement toward excellence
+
+GWA Statistics
+
+(Mean) Average GWA of the Class: 1.908
+
+The average GWA represents the overall academic performance of the class. It shows the general standing of students when all grades are combined. 
+                A lower average indicates stronger performance across the group, while a higher average suggests that most students are performing at a moderate or lower level.
+
+Median GWA: 1.9249999999999998
+
+The median GWA reflects the middle point of all student grades when arranged from lowest to highest. 
+                It shows the typical performance level of the class without being affected by extremely high or low values. If the median is close to the average, it suggests a balanced distribution of grades. 
+                If there is a large difference between them, it may indicate uneven performance among students.
+
+Highest vs Lowest GWA gap: 1.4000000000000001
+
+This measures the difference between the highest-performing student and the lowest-performing student. A small gap suggests that the class performance is relatively consistent. 
+                A large gap, on the other hand, indicates a wide difference in academic achievement, showing that some students are significantly ahead while others are struggling.
+
+Standard Deviation:0.40989857538818447
+Standard deviation shows how spread out the grades are from the average. A low value means that most students have similar GWA scores, indicating consistency in performance. 
+                A high value means that grades vary widely, showing inconsistency in understanding and academic performance across the class.
+
+CONCLUSION
+
+
+The difference between the upper and lower GWA for each group indicates how far apart from one another stand the best students versus those who performed weakest, while latter will tell you how sharply centralized or dispersed were grades overall. 
+                If both are low then the class is very homogeneous and we have students performing at similar levels. Then both are high: this indicates a clear separation between strong and weak performers. A wide delta with a low standard deviation usually means that most students are very close performance-wise but some outliers make the difference, 
+                while a narrow delta with high (or higher) standard deviation suggests there is still variation across students though the overall gap might be narrower. In a nutshell, these are steps to give us an understanding of the overall performance and whether we have even class or not; 
+                that is also helpful in identifying which group need attention.
