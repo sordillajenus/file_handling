@@ -8,7 +8,7 @@ class AcademicInsightAnalysis:
 
     def ranking(self):
         with open(self.file_name, "r", encoding="utf-8") as file_1, \
-     open(self.academic_report, "a", encoding="utf-8") as file_2:
+            open(self.academic_report, "a", encoding="utf-8") as file_2:
 
             students_ranking = {
 
@@ -28,7 +28,7 @@ class AcademicInsightAnalysis:
 
     def performance_category(self):
         with open(self.file_name, "r", encoding="utf-8") as file_1, \
-     open(self.academic_report, "a", encoding="utf-8") as file_2:
+            open(self.academic_report, "a", encoding="utf-8") as file_2:
 
             execellent = []
             good = []
@@ -113,7 +113,7 @@ class AcademicInsightAnalysis:
 
     def gwa_statistics_engine(self):
         with open(self.file_name, "r", encoding="utf-8") as file_1, \
-     open(self.academic_report, "a", encoding="utf-8") as file_2:
+            open(self.academic_report, "a", encoding="utf-8") as file_2:
             average = []
             for line in file_1:
                 lines = line.split("-")
