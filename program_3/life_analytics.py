@@ -56,6 +56,17 @@ class LifeAnalytics:
         print(f"Longest Entry: {maximum_word_counts} words")
         print(f"Shortest Entry: {minimum_word_counts} words")
 
+        print("\INSIGHT:")
+        if average_words > 20:
+            print("You tend to write detailed reflections.")
+        else:
+            print("Your entries are short and concise.")
+
+        if most_common_words in ["sad", "stressed"]:
+            print("It appears that your day is flooded with negative experiences. I hope you get better. You're not alone and you're highly appreciated!")
+        else:
+            print("It appears that your emotion is generally positive and consistenly average as what everyday humans experience.")
+
 
 
 
