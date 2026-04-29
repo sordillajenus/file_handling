@@ -24,7 +24,9 @@ class MyLifeWriter:
             if question == "no":
                 break
 
-
+    def run(self):
+        self.initialize_file()
+        self.write_entries()
 
 
         
